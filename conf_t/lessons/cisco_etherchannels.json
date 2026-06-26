@@ -1,0 +1,17 @@
+{
+  "id": "cisco_etherchannels",
+  "title": "Cisco EtherChannels",
+  "platform": "Cisco",
+  "description": "Learn how to configure EtherChannels to bundle multiple physical interfaces into one logical link for redundancy and increased bandwidth.",
+  "tasks": [
+    {
+      "id": "task_1",
+      "prompt": "Enter config mode for interfaces f0/1 and f0/2 simultaneously.",
+      "prefix": "Router(config)#",
+      "expected": "^interface\\s+range\\s+f0/1-2$",
+      "aliases": ["int ra f0/1-2"],
+      "hint": "Use the range command to enter more than one interface config mode at once.",
+      "explanation": "'interface range' lets you configure multiple interfaces simultaneously. Use '-' to define the range (e.g., f0/1-2)."
+    }
+  ]
+}

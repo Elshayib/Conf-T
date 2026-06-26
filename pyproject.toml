@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "conf_t"
+version = "0.1.0"
+description = "Conf T: An extensible interactive CLI simulator for learning and practicing command line tools."
+readme = "README.md"
+authors = [
+    { name = "Islam Elshayib", email = "30467832+Elshayib@users.noreply.github.com" }
+]
+license = { file = "LICENSE" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "rich>=12.0.0",
+    "questionary>=1.10.0"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Elshayib/conf-t"
+"Bug Tracker" = "https://github.com/Elshayib/conf-t/issues"
+
+[project.scripts]
+conf-t = "conf_t.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["conf_t*"]
+
+[tool.setuptools.package-data]
+conf_t = ["lessons/*.json"]

@@ -1,0 +1,39 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Packaging / distribution
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Pytest / testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# User-specific progress database
+.conf_t_progress.json
+
+# Build tools
+*.manifest
+*.spec
